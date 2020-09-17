@@ -152,10 +152,10 @@ function christmasCountdown(){
         seconds=diffSeconds;
     }
  
-    document.getElementById('days').innerHTML = `${days} D`;
-    document.getElementById('hours').innerHTML = `${hours} H`;
-    document.getElementById('minutes').innerHTML = `${minutes} M`;
-    document.getElementById('seconds').innerHTML = `${seconds} S`;
+    document.getElementById('days').innerHTML = `Christmas in coming in ${days} Day(s) `;
+    document.getElementById('hours').innerHTML = `${hours} Hour(s) `;
+    document.getElementById('minutes').innerHTML = `${minutes} Minute(s)`;
+    document.getElementById('seconds').innerHTML = `${seconds} Seconds`;
  
     setTimeout(christmasCountdown, 1000);
 }
