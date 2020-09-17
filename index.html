@@ -1,16 +1,114 @@
 <!DOCTYPE html>
 <html>
 <style>
+#box{
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 8%;
+  width: 600px;
+  height: 420px;
+  background: #112a5c;
+  border: 2px solid #112a5c;
+  border-radius: 20px;
+  }
+
+#tree-wraper{
+  background: white;
+  border: 10px solid white;
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  display: block;
+}
+
+#top {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 45px;
+  width: 30px;
+  height: 30px;
+  background-color: #d1a11d;
+  border-radius: 50%;
+  z-index: 3;
+  position: relative;
+  }
+
+#tree {
+  margin-top: -10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 80px solid #004d00;
+  z-index: 1;
+  position: relative;
+  }
+
+#tree2 {
+  margin-top: -50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 0;
+  height: 0;
+  border-left: 55px solid transparent;
+  border-right: 55px solid transparent;
+  border-bottom: 90px solid #004d00;
+  z-index: 2;
+  position: relative;
+  }
+
+#tree3 {
+  margin-top: -70px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 0;
+  height: 0;
+  border-left: 65px solid transparent;
+  border-right: 65px solid transparent;
+  border-bottom: 110px solid #004d00;
+  z-index: 2;
+  position: relative;
+  }
+
+#trunk {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40px;
+  height: 40px;
+  background-color: brown;
+  }
+  
+#counter{
+  display: flex;
+  }
+  
 </style>
 <body>
 <div id="countdown">
   <h1>Christmas Countdown App</h1>
-    <div>
-      <div id="days"></div>
-      <div id="hours"></div>
-      <div id="minutes"></div>
-      <div id="seconds"></div>
-    </div>
+    <div id="box">
+      <div id="tree-wraper">
+        <div id="top"></div>
+        <div id="tree"></div>
+        <div id="tree2"></div>
+        <div id="tree3"></div>
+        <div id="trunk"></div>
+      </div>
+  </div>
+  <div id="counter">
+    <div id="days"></div>
+    <div id="hours"></div>
+    <div id="minutes"></div>
+    <div id="seconds"></div>
+  </div>
 </div>
 
 <script>
